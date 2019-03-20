@@ -16,7 +16,6 @@ class m190320_124212_create_post_tag_table extends Migration
             'id' => $this->primaryKey(),
             'post_id' => $this->integer(),
             'tag_id' => $this->integer(),
-            'is_deleted' => $this->boolean()->defaultValue(false),
         ]);
 
         $this->addForeignKey(

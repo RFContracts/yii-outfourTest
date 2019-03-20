@@ -15,8 +15,8 @@ class m190320_123338_create_blog_table extends Migration
         $this->createTable('{{%post}}', [
             'id' => $this->primaryKey(),
             'user_id' => $this->integer(),
-            'created_at' => $this->integer(),
-            'updated_at' => $this->integer(),
+            'created_at' => $this->string(100),
+            'updated_at' => $this->string(100),
             'title' => $this->string(255),
             'text' => $this->text(),
             'image' => $this->string(100),
